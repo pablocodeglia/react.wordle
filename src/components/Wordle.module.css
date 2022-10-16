@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600;700&display=swap");
+
+.App {
+  /* background-color: rgb(86, 226, 43); */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.error {
+  display: flex;
+  background-color: rgb(168, 0, 0);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  user-select: none;
+}
+
+.wordle-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.tile-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.tile-container {
+  /* background-color: blueviolet; */
+  /* flex-grow: 1; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(211, 211, 211);
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: xx-large;
+  user-select: none;
+}
+
+.grey {
+  border: 0px;
+  padding: 2px;
+  background-color: gray;
+  color: white;
+}
+
+.green {
+  border: 0px;
+  padding: 2px;
+  background-color: rgb(112, 161, 48);
+  color: white;
+}
+
+.yellow {
+  border: 0px;
+  padding: 2px;
+  background-color: rgb(202, 190, 26);
+  color: white;
+}
+
+.tile span {
+  transform: translateY(-2px);
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  height: fit-content;
+  margin: auto;
+  flex-shrink: 0;
+}
+
+.keyboard-key {
+  background-color: lightgrey;
+  width: 35px;
+  height: 45px;
+  border-radius: 5px;
+  margin: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: large;
+  border: 0;
+  cursor: pointer;
+}
+.keyboard-key-grey {
+  background-color: rgb(66, 66, 66);
+}
+
+.keyboard-key-large {
+  background-color: lightgrey;
+  width: 60px;
+  height: 45px;
+  border-radius: 5px;
+  margin: 0.2rem;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  border: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.keyboard-key-large svg {
+  margin-left: 10px;
+  margin-top: -3px;
+  width: 3.5rem;
+  height: 3.5rem;
+}
