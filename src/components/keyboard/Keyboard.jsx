@@ -1,5 +1,4 @@
-import { GameState } from "../store/Context";
-import classes from "./Wordle.module.css";
+import classes from "../wordle/Wordle.module.css";
 import KeyboardKey from "./KeyboardKey";
 import KeyboardBackspace from "./KeyboardBackspace";
 
@@ -26,7 +25,6 @@ const keyboardKeys = {
 };
 
 const Keyboard = () => {
-  const GameContext = GameState();
   const currKB = keyboardKeys[language];
 
   return (

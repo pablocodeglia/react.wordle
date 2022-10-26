@@ -1,6 +1,6 @@
 import Line from "./Line";
-import classes from "./Wordle.module.css";
-import { GameState } from "../store/Context";
+import classes from "../wordle/Wordle.module.css";
+import { GameState } from "../../store/Context";
 
 const Board = () => {
   const GameContext = GameState();

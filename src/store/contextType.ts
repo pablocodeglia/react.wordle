@@ -1,21 +1,24 @@
-import { Dispatch, MutableRefObject, SetStateAction } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 type GameContextType = {
+  board: string[][];
+  won: boolean;
   secretWord: string[];
   lineNum: number;
   lineIndex: number;
   letterIndex: number;
-  currentGuess: string[];
   wrongLetters: string[];
-  setWrongLetters: Dispatch<SetStateAction<string[]>>;
   isWordValid: boolean | null;
-  tilesRef: MutableRefObject<(HTMLDivElement | null)[][]>;
-  submittedWord: string;
+  submittedWord: string[];
+  error: string;
+  setWrongLetters: Dispatch<SetStateAction<string[]>>;
+  setIsWordValid: Dispatch<SetStateAction<boolean | null>>;
+  setError: Dispatch<SetStateAction<string>>;
+  setSubmittedWord: Dispatch<SetStateAction<string[]>>;
   getWord: () => Promise<void>;
   addClickedLetter: (letter: string) => void;
   backspaceLetter: () => void;
   submitGuess: () => void;
-  addWrongLetter: (letter: string) => void;
 };
 
 export default GameContextType;

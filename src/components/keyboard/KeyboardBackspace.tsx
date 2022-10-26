@@ -1,5 +1,5 @@
-import { GameState } from "../store/Context";
-import classes from "./Wordle.module.css";
+import { GameState } from "../../store/Context";
+import classes from "../wordle/Wordle.module.css";
 
 const KeyboardBackspace: React.FC = (props) => {
   const GameContext = GameState();

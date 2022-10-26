@@ -9,17 +9,17 @@
 
 .error {
   display: flex;
+  width: fit-content;
+  height: 40px;
+  margin-top: 20px;
+  padding: 0px 10px;
+  border-radius: 5px;
   background-color: rgb(168, 0, 0);
   color: white;
   justify-content: center;
   align-items: center;
-  font-weight: 700;
   text-align: center;
-  border-radius: 5px;
-  margin-top: 20px;
-  width: 150px;
-  height: 40px;
-  user-select: none;
+  font-weight: 700;
 }
 
 .wordle-container {
@@ -58,6 +58,11 @@
   font-weight: 700;
   font-size: xx-large;
   user-select: none;
+  text-transform: capitalize;
+}
+
+.tile-current {
+  border-color: rgb(66, 66, 66);
 }
 
 .grey {
@@ -97,7 +102,7 @@
 }
 
 .keyboard-key {
-  background-color: lightgrey;
+  background-color: #d3d3d3;
   width: 35px;
   height: 45px;
   border-radius: 5px;
@@ -105,13 +110,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 600;
+  font-weight: 500;
   font-size: large;
   border: 0;
   cursor: pointer;
+  text-transform: capitalize;
 }
-.keyboard-key-grey {
-  background-color: rgb(66, 66, 66);
+
+.keyboard-key:disabled {
+  background-color: #9c9c9c;
+  color: #b6b6b6;
+  cursor: default;
 }
 
 .keyboard-key-large {
@@ -124,7 +133,7 @@
   justify-content: center;
   vertical-align: middle;
   border: 0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.9rem;
   cursor: pointer;
 }

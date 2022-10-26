@@ -1,8 +1,10 @@
-import classes from "./Wordle.module.css";
-import { motion } from "framer-motion";
-import { GameState } from "../store/Context";
-import LineTile from "./LineTile";
 import { useEffect } from "react";
+import { GameState } from "../../store/Context";
+import classes from "../wordle/Wordle.module.css";
+
+import { motion } from "framer-motion";
+
+import LineTile from "./LineTile";
 
 const Line: React.FC<{ index: number; id: string }> = (props) => {
   const GameContext = GameState();
