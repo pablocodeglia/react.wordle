@@ -94,7 +94,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: 100%;
   height: fit-content;
   margin: auto;
@@ -103,7 +103,7 @@
 
 .keyboard-key {
   background-color: #d3d3d3;
-  width: 35px;
+  width: 30px;
   height: 45px;
   border-radius: 5px;
   margin: 0.2rem;
@@ -125,7 +125,7 @@
 
 .keyboard-key-large {
   background-color: lightgrey;
-  width: 60px;
+  width: 55px;
   height: 45px;
   border-radius: 5px;
   margin: 0.2rem;
@@ -140,7 +140,7 @@
 
 .keyboard-key-large svg {
   margin-left: 10px;
-  margin-top: -3px;
+  margin-top: -5px;
   width: 3.5rem;
   height: 3.5rem;
 }

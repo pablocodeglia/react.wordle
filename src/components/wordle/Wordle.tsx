@@ -21,8 +21,7 @@ const Wordle: React.FC = () => {
       <div className={classes["wordle-container"]}>
         <Board />
         <ErrorMessage />
-        psss! word is: {GameContext?.secretWord} <br />
-        submitted word: {GameContext?.submittedWord}
+        {/* psss! word is: {GameContext?.secretWord} */}
         <Keyboard />
       </div>
     </>
